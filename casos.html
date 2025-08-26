@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Casos de Incêndio - Hydro Bot</title>
+  <meta name="description" content="Galeria de casos de incêndio registrados pelo Hydro Bot" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body class="theme-dark">
+  <header class="navbar" role="navigation" aria-label="Principal">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Hydro Bot" class="brand-logo" />
+      <span class="brand-name">Hydro Bot</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <nav id="nav-links" class="nav-links" aria-label="Links principais">
+      <a href="index.html">Home</a>
+      <a href="projeto.html">Projeto</a>
+      <a href="casos.html" class="active">Casos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h1 class="section-title reveal">Galeria de Casos de Incêndio</h1>
+      <p class="reveal">Clique nas imagens para ampliar.</p>
+
+      <div class="grid three gallery">
+        <a class="gallery-item reveal" href="images/caso1.jpg" data-type="image" data-caption="Caso 1 - Lab A">
+          <img src="images/caso1.jpg" class="case-photo" alt="Caso 1" />
+        </a>
+
+        <a class="gallery-item reveal delay-1" href="images/caso2.jpg" data-type="image" data-caption="Caso 2 - Oficina">
+          <img src="images/caso2.jpg" class="case-photo" alt="Caso 2" />
+        </a>
+
+        <a class="gallery-item reveal delay-2" href="images/caso3.jpg" data-type="image" data-caption="Caso 3 - Escritório">
+          <img src="images/caso3.jpg" class="case-photo" alt="Caso 3 (placeholder)" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Seção com vídeo do depoimento -->
+    <section class="section container testimonial">
+      <h2 class="section-title reveal">Depoimento de um Bombeiro</h2>
+
+      <div class="testimonial-card reveal">
+        <!-- player inline -->
+        <video class="testimonial-video" controls poster="images/thumb-video.jpg" preload="metadata" aria-label="Depoimento do bombeiro">
+          <source src="videos/bomba.mp4" type="video/mp4" />
+          Seu navegador não suporta reproduzir este vídeo.
+        </video>
+
+        <!-- botão para abrir o mesmo vídeo em modal/lightbox -->
+        <div class="testimonial-actions">
+          <button id="openVideoModal" class="btn primary" type="button" aria-haspopup="dialog">
+            Assistir em tela cheia
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox / Modal (para imagens e vídeo) -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Visualizador">
+    <div class="lightbox-inner" role="document">
+      <button class="lightbox-close" aria-label="Fechar">✕</button>
+      <img id="lightbox-img" alt="" />
+      <video id="lightbox-video" controls></video>
+      <p class="caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+  <footer class="footer">
+    <div class="container small">
+      <p>© <span data-year></span> Hydro Bot.</p>
+    </div>
+  </footer>
+</body>
+</html>

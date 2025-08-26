@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hydro Bot</title>
+  <meta name="description" content="Hydro Bot — Inovação para combate e prevenção de incêndios" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body class="theme-dark">
+  <!-- Loader -->
+  <div id="loader" aria-hidden="true">
+    <div class="spinner" role="status" aria-label="Carregando"></div>
+    <span class="sr-only">Carregando…</span>
+  </div>
+
+  <header class="navbar" role="navigation" aria-label="Principal">
+    <a class="brand" href="index.html" aria-label="Hydro Bot - página inicial">
+      <img src="images/logo.png" alt="" class="brand-logo" />
+      <span class="brand-name">Hydro Bot</span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <nav id="nav-links" class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="projeto.html">Projeto</a>
+      <a href="casos.html">Casos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero com gradiente animado e parallax leve -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content container">
+        <h1 class="reveal fade-up">
+          Inovação no combate e <span class="accent">prevenção de incêndios</span>
+        </h1>
+        <p class="lead reveal fade-up delay-1">
+          O Hydro Bot integra sensores, visão computacional e resposta rápida para proteger pessoas e ambientes críticos.
+        </p>
+        <div class="cta-row reveal fade-up delay-2">
+          <a class="btn primary" href="projeto.html">Ver Projeto</a>
+          <a class="btn ghost" href="casos.html">Casos de Incêndio</a>
+        </div>
+        <div class="hero-media reveal fade-up delay-3 tilt">
+          <br>
+          <img src="images/4.jfif" alt="Equipe Hydro Bot" class="main-photo" />
+        </div>
+      </div>
+
+      <a class="scroll-indicator" href="#sobre" aria-label="Rolar para conteúdo">↓</a>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section container">
+      <div class="grid two">
+        <div class="card glass reveal">
+          <h2>Por que Hydro Bot?</h2>
+          <p>
+            O nome Hydro Bot une dois conceitos: “Hydro”, que remete à água usada no combate ao fogo, e “Bot”, de robô. Assim, ele representa um robô autônomo que utiliza água para extinguir incêndios
+            - <strong>agilidade</strong>, <strong>precisão</strong> e <strong>segurança</strong>.
+          </p>
+        </div>
+        <div class="card outline reveal delay-1">
+          <h2>Como funciona</h2>
+          <ul class="feature-list">
+            <li>O Hydro Bot detecta fogo com sensores, navega sozinho por corredores, e usa um spray de água do reservatório para apagar o incêndio.
+               Todo o sistema é controlado por um Arduino e alimentado por baterias</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="section container">
+      <h2 class="section-title reveal">Destaques</h2>
+      <div class="grid three">
+        <div class="card reveal">
+          <h3>Resposta Rápida</h3>
+          <p>Minimizamos o tempo crítico entre detecção e combate.</p>
+        </div>
+        <div class="card reveal delay-1">
+          <h3>Escalável</h3>
+          <p>Do laboratório à indústria, adaptável a diferentes cenários.</p>
+        </div>
+        <div class="card reveal delay-2">
+          <h3>Monitoramento</h3>
+          <p>Dados e imagens para análise posterior e melhoria contínua.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato (ancora simples) -->
+    <section id="contato" class="section container">
+      <h2 class="section-title reveal">Contato</h2>
+      <p class="reveal">Envie um e-mail para <a href="">tccantiincendio@gmail.com</a>.</p>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+  <footer class="footer">
+    <div class="container small">
+      <p>© <span data-year></span> Hydro Bot. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projeto Hydro Bot</title>
+  <meta name="description" content="Detalhes do projeto Hydro Bot" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body class="theme-dark">
+  <header class="navbar" role="navigation" aria-label="Principal">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="" class="brand-logo" />
+      <span class="brand-name">Hydro Bot</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <nav id="nav-links" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projeto.html" class="active">Projeto</a>
+      <a href="casos.html">Casos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h1 class="section-title reveal">Projeto Hydro Bot</h1>
+      <div class="grid two">
+        <div class="card reveal">
+          <h2>Arquitetura</h2>
+          <p>Integração de sensores, câmera, módulo de decisão e atuadores para resposta automática.</p>
+          <ul class="feature-list">
+            <li>Sensor de fumaça/temperatura</li>
+            <li>Visão computacional para detecção de chamas</li>
+            <li>Acionamento de bomba/aspersão</li>
+          </ul>
+        </div>
+        <div class="card media reveal tilt">
+          <img src="images/projeto_principal.jpg" alt="Protótipo Hydro Bot" class="project-photo"/>
+        </div>
+      </div>
+
+      <h2 class="section-title reveal">Fotos do projeto:</h2>
+      <div class="grid two">
+        <a class="gallery-item reveal" href="images/fotoa.jpg" data-lightbox="projeto" data-caption="Caso 1">
+          <img src="images/fotoa.jpg" alt="Caso 1" class="case-photo"/>
+        </a>
+        <a class="gallery-item reveal delay-1" href="images/cabou.jpg" data-lightbox="projeto" data-caption="Caso 2">
+          <img src="images/cabou.jpg" alt="Caso 2" class="case-photo"/>
+        </a>
+        <br>
+      </div>
+      <div class="cta-row">
+        <a class="btn primary" href="casos.html">Ver sobre casos de incêndios</a>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+  <footer class="footer">
+    <div class="container small">
+      <p>© <span data-year></span> Hydro Bot.</p>
+    </div>
+  </footer>
+</body>
+</html>
